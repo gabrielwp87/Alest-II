@@ -1,5 +1,6 @@
-from T1 import Monkeys, Game
+from T1 import Monkeys, get_monkeys_number, get_rounds
 import time
+
 
 file_50_macacos = "caso_50Macacos_5000Rodadas.txt"
 file_100_macacos = "caso_100Macacos_10000Rodadas.txt"
@@ -16,29 +17,34 @@ def Games(file):
     participants = []
     winner_name = ""
 
-    game = Game(file)
-    monkey_number = game.get_monkeys_number()
-    number_rounds = game.get_rounds()
+    monkey_number = get_monkeys_number(file)
+    number_rounds = get_rounds(file)
 
-    for i in range(monkey_number):
-        monkey = Monkeys(file, i + 1)
-        monkey.read_file()
-        monkey.set_rules()
+    txt = open(file)
+    content = txt.readlines()
+    # Macaco 0 par -> 43 impar -> 25 : 328 : 103304
+    for i in range(1, monkey_number + 1):
+        line = content[i].split()
+        # -1 pois será usado para o index
+        rules_even = int(line[4]) - 1
+        rules_odd = int(line[7]) - 1
+        content_for_stones = line[11:]
+        monkey = Monkeys(i + 1, content, rules_even,
+                         rules_odd, content_for_stones)
         monkey.stones()
         participants.append(monkey)
 
     for i in range(number_rounds):
         for j in range(monkey_number):
-            if participants[j].get_all_stones_number() > 0:
-                if participants[j].get_even_stones_number() > 0:
-                    even_rule = participants[j].get_rules_even()
-                    even_stones = participants[j].give_even_stones()
-                    participants[even_rule].add_even_stones(even_stones)
+            if participants[j].get_even_stones_number():
+                even_rule = participants[j].get_rules_even()
+                even_stones = participants[j].give_even_stones()
+                participants[even_rule].add_even_stones(even_stones)
 
-                if participants[j].get_odd_stones_number() > 0:
-                    odd_rule = participants[j].get_rules_odd()
-                    odd_stones = participants[j].give_odd_stones()
-                    participants[odd_rule].add_odd_stones(odd_stones)
+            if participants[j].get_odd_stones_number():
+                odd_rule = participants[j].get_rules_odd()
+                odd_stones = participants[j].give_odd_stones()
+                participants[odd_rule].add_odd_stones(odd_stones)
 
     winner = participants[monkey_number - 1]
     for i in range(monkey_number-1):
@@ -65,22 +71,22 @@ print("Third game ------------------------- ")
 Games(file_200_macacos)
 print("------------------------------------ ")
 
-# print("Fourth game ------------------------- ")
-# Games(file_400_macacos)
-# print("------------------------------------ ")
+print("Fourth game ------------------------- ")
+Games(file_400_macacos)
+print("------------------------------------ ")
 
-# print("Fifth game ------------------------- ")
-# Games(file_600_macacos)
-# print("------------------------------------ ")
+print("Fifth game ------------------------- ")
+Games(file_600_macacos)
+print("------------------------------------ ")
 
-# print("Sixth game ------------------------- ")
-# Games(file_800_macacos)
-# print("------------------------------------ ")
+print("Sixth game ------------------------- ")
+Games(file_800_macacos)
+print("------------------------------------ ")
 
-# print("Seventh game ------------------------- ")
-# Games(file_900_macacos)
-# print("------------------------------------ ")
+print("Seventh game ------------------------- ")
+Games(file_900_macacos)
+print("------------------------------------ ")
 
-# print("Eighth game ------------------------- ")
-# Games(file_1000_macacos)
-# print("------------------------------------ ")
+print("Eighth game ------------------------- ")
+Games(file_1000_macacos)
+print("------------------------------------ ")

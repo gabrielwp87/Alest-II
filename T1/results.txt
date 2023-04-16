@@ -1,0 +1,32 @@
+First game ------------------------- 
+The winner from this game is Macaco 16, with 5720 coconuts!
+The elapsed time was 0.14915943145751953 second.
+------------------------------------ 
+Second game ------------------------- 
+The winner from this game is Macaco 12, with 15254 coconuts!
+The elapsed time was 0.4687926769256592 second.
+------------------------------------ 
+Third game ------------------------- 
+The winner from this game is Macaco 88, with 14478 coconuts!
+The elapsed time was 2.2966012954711914 seconds.
+------------------------------------ 
+Fourth game ------------------------- 
+The winner from this game is Macaco 131, with 162751 coconuts!
+The elapsed time was 7.154769420623779 seconds.
+------------------------------------ 
+Fifth game ------------------------- 
+The winner from this game is Macaco 42, with 613870 coconuts!
+The elapsed time was 16.10045075416565 seconds.
+------------------------------------ 
+Sixth game ------------------------- 
+The winner from this game is Macaco 70, with 210981 coconuts!
+The elapsed time was 33.219539165496826 seconds.
+------------------------------------ 
+Seventh game ------------------------- 
+The winner from this game is Macaco 670, with 278224 coconuts!
+The elapsed time was 35.691367387771606 seconds.
+------------------------------------ 
+Eighth game ------------------------- 
+The winner from this game is Macaco 24, with 232310 coconuts!
+The elapsed time was 47.84949254989624 seconds.
+------------------------------------ 
