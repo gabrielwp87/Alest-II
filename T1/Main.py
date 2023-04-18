@@ -12,6 +12,8 @@ file_900_macacos = "caso_900Macacos_90000Rodadas.txt"
 file_1000_macacos = "caso_1000Macacos_100000Rodadas.txt"
 
 
+# Main
+
 def Games(file):
     start = time.time()
     participants = []
@@ -29,8 +31,8 @@ def Games(file):
         rules_even = int(line[4])
         rules_odd = int(line[7])
         content_for_stones = line[11:]
-        monkey = Monkeys(i + 1, content, rules_even,
-                         rules_odd, content_for_stones)
+        monkey = Monkeys(content, rules_even,
+                         rules_odd, content_for_stones, i)
         monkey.stones()
         participants.append(monkey)
 
@@ -54,6 +56,10 @@ def Games(file):
 
     print(
         f"The winner from this game is {winner_name}, with {winner.get_all_stones_number()} coconuts!")
+
+    # for i in range(monkey_number):
+    #     print(
+    #         f'o macaco {i} possui: {participants[i].get_all_stones_number()}')
 
     end = time.time()
     print(f"The elapsed time was {end - start} seconds.")
