@@ -27,11 +27,10 @@ def Games(file):
     # Macaco 0 par -> 43 impar -> 25 : 328 : 103304
     for i in range(1, monkey_number + 1):
         line = content[i].split()
-        # -1 pois será usado para o index
         rules_even = int(line[4])
         rules_odd = int(line[7])
         content_for_stones = line[11:]
-        monkey = Monkeys(content, rules_even,
+        monkey = Monkeys(rules_even,
                          rules_odd, content_for_stones, i)
         monkey.stones()
         participants.append(monkey)
