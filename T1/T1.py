@@ -1,11 +1,9 @@
 
 class Monkeys:
-    def __init__(self, line, content, rules_even, rules_odd, content_for_stones):
+    def __init__(self rules_even, rules_odd, content_for_stones, i):
         self.odd_stones = 0
         self.even_stones = 0
-        self.content = content
-        self.line = line
-        self.name = f'Macaco {line -1}'
+        self.name = f'Macaco {i - 1}'
         self.rules_even = rules_even
         self.rules_odd = rules_odd
         self.content_for_stones = content_for_stones
