@@ -1,0 +1,152 @@
+Caso 0:
+linhas: 27
+colunas: 50
+Caminho do porto 1 ao porto 2 o que custou: 27
+
+Caminho do porto 2 ao porto 3 o que custou: 39
+
+Caminho do porto 3 ao porto 4 o que custou: 12
+
+Caminho do porto 4 ao porto 5 o que custou: 11
+
+Caminho do porto 5 ao porto 6 o que custou: 42
+
+Porto 7 inacessivel
+
+Caminho do porto 6 ao porto 8 o que custou: 48
+
+Caminho do porto 8 ao porto 9 o que custou: 42
+
+Caminho do porto 9 ao porto 1 o que custou: 27
+
+Total gasto: 248
+Tempo de execucao: 0,063s
+
+-----------------------------------------------------------------------------------------------
+Caso 1:
+linhas: 55
+colunas: 100
+Caminho do porto 1 ao porto 2 o que custou: 61
+
+Caminho do porto 2 ao porto 3 o que custou: 97
+
+Caminho do porto 3 ao porto 4 o que custou: 84
+
+Caminho do porto 4 ao porto 5 o que custou: 72
+
+Porto 6 inacessivel
+
+Caminho do porto 5 ao porto 7 o que custou: 51
+
+Caminho do porto 7 ao porto 8 o que custou: 33
+
+Caminho do porto 8 ao porto 9 o que custou: 63
+
+Caminho do porto 9 ao porto 1 o que custou: 137
+
+Total gasto: 598
+Tempo de execucao: 0,125s
+
+
+-----------------------------------------------------------------------------------------------
+Caso 2:
+linhas: 111
+colunas: 200
+Caminho do porto 1 ao porto 2 o que custou: 102
+
+Caminho do porto 2 ao porto 3 o que custou: 96
+
+Caminho do porto 3 ao porto 4 o que custou: 163
+
+Caminho do porto 4 ao porto 5 o que custou: 113
+
+Caminho do porto 5 ao porto 6 o que custou: 135
+
+Caminho do porto 6 ao porto 7 o que custou: 120
+
+Caminho do porto 7 ao porto 8 o que custou: 114
+
+Caminho do porto 8 ao porto 9 o que custou: 62
+
+Caminho do porto 9 ao porto 1 o que custou: 207
+
+Total gasto: 1112
+Tempo de execucao: 0,126s
+
+
+-----------------------------------------------------------------------------------------------
+Caso 3:
+linhas: 277
+colunas: 500
+Caminho do porto 1 ao porto 2 o que custou: 92
+
+Caminho do porto 2 ao porto 3 o que custou: 402
+
+Caminho do porto 3 ao porto 4 o que custou: 79
+
+Caminho do porto 4 ao porto 5 o que custou: 335
+
+Porto 6 inacessivel
+
+Caminho do porto 5 ao porto 7 o que custou: 283
+
+Caminho do porto 7 ao porto 8 o que custou: 185
+
+Caminho do porto 8 ao porto 9 o que custou: 400
+
+Caminho do porto 9 ao porto 1 o que custou: 434
+
+Total gasto: 2210
+Tempo de execucao: 0,542s
+
+
+-----------------------------------------------------------------------------------------------
+Caso 4:
+linhas: 555
+colunas: 1000
+Caminho do porto 1 ao porto 2 o que custou: 649
+
+Caminho do porto 2 ao porto 3 o que custou: 574
+
+Porto 4 inacessivel
+
+Porto 5 inacessivel
+
+Caminho do porto 3 ao porto 6 o que custou: 222
+
+Caminho do porto 6 ao porto 7 o que custou: 340
+
+Caminho do porto 7 ao porto 8 o que custou: 714
+
+Porto 9 inacessivel
+
+Caminho do porto 8 ao porto 1 o que custou: 1011
+
+Total gasto: 3510
+Tempo de execucao: 0,612s
+
+
+-----------------------------------------------------------------------------------------------
+Caso 5:
+linhas: 1111
+colunas: 2000
+Caminho do porto 1 ao porto 2 o que custou: 1252
+
+Caminho do porto 2 ao porto 3 o que custou: 2355
+
+Caminho do porto 3 ao porto 4 o que custou: 488
+
+Caminho do porto 4 ao porto 5 o que custou: 1425
+
+Caminho do porto 5 ao porto 6 o que custou: 1535
+
+Caminho do porto 6 ao porto 7 o que custou: 949
+
+Caminho do porto 7 ao porto 8 o que custou: 918
+
+Caminho do porto 8 ao porto 9 o que custou: 1154
+
+Caminho do porto 9 ao porto 1 o que custou: 1442
+
+Total gasto: 11518
+Tempo de execucao: 1,605s
